@@ -1,5 +1,5 @@
 {
-  "name": "@leadhome/utilities",
+  "name": "@leadhome/hydrogen",
   "version": "0.0.1",
   "description": "Utility libraries to use at Leadhome.",
   "main": "lib/index.js",
