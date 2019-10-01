@@ -25,7 +25,7 @@ export const setAuthToken = auth => {
 
   Cookies.set('authToken', authToken, {
     expires: new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 365),
-    domain: '.leadhome.co.za'
+    path: '/'
   });
 };
 
@@ -36,6 +36,10 @@ export const isLoggedIn = async () => {
   let authToken = getAuthToken();
   const refreshToken = getRefreshToken();
   const expiry = parseISO(getAuthTokenExp());
+
+  if (!authToken || !refreshToken || !expiry) {
+    return false;
+  }
 
   /**
    * Exit early if we have a very old refresh token.
@@ -72,11 +76,11 @@ export const isLoggedIn = async () => {
 
 export const getBearer = () => {
   const cookie = Cookies.get('authToken');
-  if (isLoggedIn()) return `bearer ${cookie.split('%7C')[1]}`;
+  if (cookie) return `bearer ${cookie.split('|')[1]}`;
 
   return null;
 };
 
 export const logout = () => {
-  Cookies.remove('authToken', { domain: '.leadhome.co.za' });
+  Cookies.remove('authToken', { path: '/' });
 };
