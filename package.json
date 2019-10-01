@@ -45,5 +45,9 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "prettier": "@leadhome/eslint-config/.prettierrc.json"
+  "prettier": "@leadhome/eslint-config/.prettierrc.json",
+  "dependencies": {
+    "date-fns": "^2.4.1",
+    "js-cookie": "^2.2.1"
+  }
 }
