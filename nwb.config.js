@@ -5,6 +5,6 @@ module.exports = {
     umd: false
   },
   babel: {
-    runtime: 'helpers'
+    runtime: true
   }
-}
+};
