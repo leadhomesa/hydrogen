@@ -24,6 +24,7 @@
     "react": "16.x"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@leadhome/eslint-config": "^1.2.1",
     "nwb": "0.23.x",
     "react": "^16.8.6",
@@ -47,6 +48,7 @@
   },
   "prettier": "@leadhome/eslint-config/.prettierrc.json",
   "dependencies": {
+    "@babel/runtime": "^7.7.2",
     "date-fns": "^2.4.1",
     "js-cookie": "^2.2.1"
   }
