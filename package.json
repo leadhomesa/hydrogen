@@ -20,15 +20,10 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "peerDependencies": {
-    "react": "16.x"
-  },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.6.2",
     "@leadhome/eslint-config": "^1.2.1",
     "nwb": "0.23.x",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "semantic-release": "^15.13.18"
   },
   "author": "Seagyn Davis",
