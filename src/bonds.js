@@ -1,4 +1,4 @@
-export const MAX_ALLOWED_REPAYMENT_PERCENTAGE_OF_GROSS = 30;
+const MAX_ALLOWED_REPAYMENT_PERCENTAGE_OF_GROSS = 30;
 
 export const repaymentCalculator = ({
   purchasePrice,
